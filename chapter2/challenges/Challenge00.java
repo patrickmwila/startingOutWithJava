@@ -6,8 +6,10 @@ import javax.swing.JOptionPane;
  * @author patrick
  * Practicing various java syntax and programming concepts
  */
-public class Exercise00 {
-	public static void main (String [] args) {
+public class Challenge00 
+{
+	public static void main (String [] args) 
+    {
 		
 		// Demonstrating different data types
 		int testing = 32768;
