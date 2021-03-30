@@ -33,6 +33,7 @@ public class Challenge02
 	    System.out.println("FirstName: " + firstName + ". Whose initial is: " + firstInitial);
 	    System.out.println("MiddleNmae: " + middleName + ". Whose initial is: " + middleInitial);
 	    System.out.println("lastName: " + lastName + ". Whose initial is: " + lastInitial);
+
 	}
 
 }
