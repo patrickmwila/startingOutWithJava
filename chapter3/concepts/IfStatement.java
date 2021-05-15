@@ -1,4 +1,3 @@
-package chapter3.concepts;
 import java.util.Scanner;
 
 /**
@@ -11,9 +10,7 @@ import java.util.Scanner;
  *
  */
 
-
-
-public class AverageScore 
+public class IfStatement 
 {
 	public static void main(String[] args)
 	{
@@ -44,7 +41,8 @@ public class AverageScore
 		
 		//Calculate  and display the average
 		average = (score1 + score2 + score3) / 3.0 ;
-		System.out.println("\nThe average is: " + average + "%");
+		System.out.printf("\nThe average is: %2.1f", average);
+        System.out.println("%");
 		
 		//If the average is higher than 95, congratulate the user
 		if (average > 95.0)
