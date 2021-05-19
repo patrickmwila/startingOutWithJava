@@ -1,4 +1,4 @@
-package chapter2.challenges;
+//package chapter2.challenges;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  */
 public class Challenge00 
 {
-   public static void main (String [] args) 
+   public static void main(String[] args) 
    {
    	
    	// Demonstrating different data types
@@ -85,8 +85,7 @@ public class Challenge00
       System.out.println(); // print a blank line
       int p;
       double y = 2.5;	
-   	
-   
+
    	// p = y; // this causes an error "type mismatch"
    	// Refer to the book startingOutWithJava by Tony Gaddis for more details
       p = 20;
