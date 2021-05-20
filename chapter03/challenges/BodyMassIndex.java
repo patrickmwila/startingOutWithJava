@@ -45,6 +45,6 @@ public class BodyMassIndex
             System.out.printf("Your BMI is %.1f, you're overweight!\n", var_BMI);
         }
 
-        System.out.println("\n----------------------------------------------");
+        System.out.println("\n------------------------------------------------");
     }
 }
