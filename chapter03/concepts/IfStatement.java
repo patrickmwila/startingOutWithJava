@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * @author patrick
  * 
@@ -10,6 +8,7 @@ import java.util.Scanner;
  *
  */
 
+import java.util.Scanner;
 public class IfStatement 
 {
 	public static void main(String[] args)
