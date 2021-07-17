@@ -3,7 +3,6 @@
  * source code solution for programming challenge - 5
  * chapter 3 | startingOutWithJava 7/e (Tonny Gaddis)
  */
-
 import java.util.Scanner;
 
 public class MassAndWeight
