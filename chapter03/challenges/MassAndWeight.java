@@ -12,11 +12,6 @@ public class MassAndWeight
     {
         Scanner keyboard = new Scanner(System.in); // create a scanner object
 
-        // display purpose of program
-        System.out.println("This program calculates the weight of an object "+
-                "\nand determines if it's too heavy or light.");
-        System.out.println("===============================================");
-
         // prompt for input
         System.out.print("Enter the mass of an object (in kilograms): ");
         double var_mass = keyboard.nextShort(); // get input and store it in var_mass
@@ -27,17 +22,17 @@ public class MassAndWeight
         // display the result
         if (var_weight > 1000)
         {
-            System.out.printf("The object is too heavy! It's weight = %.2fN\n",
+            System.out.printf("The object is too heavy! It's weight = %.1fN\n",
                     var_weight);
         }
         else if (var_weight < 10)
         {
-            System.out.printf("The object is too light! It's weight = %.2fN\n", 
+            System.out.printf("The object is too light! It's weight = %.1fN\n", 
                     var_weight);
         }
         else 
         {
-            System.out.printf("The object's weight is: %.2fN\n", var_weight);
+            System.out.printf("The object's weight is: %.1fN\n", var_weight);
         }
     }
 }

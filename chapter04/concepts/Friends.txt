@@ -1,16 +1,5 @@
--------- Friends --------
-Paul
+A list of my friends names
 Norbert
+Paul
 Precious
 Mulenga
-Patrick
-Rick
-Adminroot
-Shadreck
-Wanji
-Joseph
-mwila
-Taonga
-Rachael
-Root
-Linux

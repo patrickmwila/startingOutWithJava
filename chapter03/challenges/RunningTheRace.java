@@ -34,6 +34,7 @@ public class RunningTheRace
 
         System.out.println();
 
+        // display Runners in the order that they finished the race
         if (var_1st_min < var_2nd_min && var_1st_min < var_3rd_min)
         {
             System.out.println(var_1st_runner);
