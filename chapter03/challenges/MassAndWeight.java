@@ -7,18 +7,23 @@ import java.util.Scanner;
 
 public class MassAndWeight
 {
-    public static void main(String [] args)
+    public static void main(String[] args)
     {
-        Scanner keyboard = new Scanner(System.in); // create a scanner object
+        // create a scanner object that will read input from the keyboard
+        Scanner keyboard = new Scanner(System.in); 
+
+        double var_mass,                // will hold the mass of an object
+               var_weight;              // will hold the calculated weight
 
         // prompt for input
         System.out.print("Enter the mass of an object (in kilograms): ");
-        double var_mass = keyboard.nextShort(); // get input and store it in var_mass
+        var_mass = keyboard.nextDouble(); 
 
         // calculate weight
-        double var_weight = var_mass * 9.8;
+        var_weight = var_mass * 9.8;
 
-        // display the result
+
+        // display the result result based on the following conditions
         if (var_weight > 1000)
         {
             System.out.printf("The object is too heavy! It's weight = %.1fN\n",
