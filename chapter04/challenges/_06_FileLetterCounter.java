@@ -4,39 +4,51 @@
  * Description: A program that counts the number of times a character appears in 
  *              in a given file.
  */
-
-import java.util.Scanner;
-import javax.swing.JOptionPane;
-
-import java.io.FileReader;
-import java.io.IOException;
+import java.util.Scanner;       // will be used to read input from the file
+import javax.swing.JOptionPane; // will be used to interact with the program
+import java.io.File;            // will be used to hold the file for reading
+import java.io.IOException;     // will be used to throw IOExceptions
 
 public class _06_FileLetterCounter
 {
     public static void main(String[] args) throws IOException
     {
-        // prompt user input
+        // prompt user for file name input
         String userFile = JOptionPane.showInputDialog("Enter file name ");
-        String userChar = JOptionPane.showInputDialog("Enter a character");
-        char findChar = userChar.charAt(0);
 
-        // create a FileReader object to open the file for reading
-        FileReader file = new FileReader(userFile);
+        // create a File object
+        File file = new File(userFile);     
+
+        // check if the file exists
+        if (!file.exists())
+        {
+            String errorFlag = "File was not found";
+            JOptionPane.showMessageDialog(null, errorFlag,"FileLetterCounter",
+                        JOptionPane.ERROR_MESSAGE);
+
+            System.exit(0);
+        }
 
         // create a Scanner object to read input from file
         Scanner inputFile = new Scanner(file);
 
-        // read the lines of the file
+        // "prompt user for character input"
+        String userChar = JOptionPane.showInputDialog("Enter a character");
+        char findChar = userChar.charAt(0);
+
+
         int count = 0; // used to count findChar in str
 
+        // a loop to read the lines of the file
         while (inputFile.hasNext())
         {
-            String str = inputFile.nextLine(); // read file line by line
+            String line = inputFile.nextLine(); // read file line by line
 
-            // loop through str line
-            for (int i = 0; i < str.length(); i++)
+            // loop through each line
+            // i = index
+            for (int i = 0; i < line.length(); i++)
             {
-                if (str.charAt(i) == findChar)
+                if (line.charAt(i) == findChar)
                 {
                     count++; // increment count by 1
                 }
@@ -44,12 +56,11 @@ public class _06_FileLetterCounter
         }
 
         // clean the rams buffer
-        file.close();
         inputFile.close();
 
         // display the results
         String msg = "'" + findChar + "' appears " + count + " times in " + userFile;
         JOptionPane.showMessageDialog(null, msg, "FileLetterCounter",
-                    JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.INFORMATION_MESSAGE);
     }
 }

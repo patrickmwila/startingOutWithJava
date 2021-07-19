@@ -56,7 +56,6 @@ public class _07_HotelOccupancy
             totalRoomsOccupied += occupiedRooms;
             
         }
-
         // calculate number of rooms which are vacant
         vacantRooms = totalRooms - totalRoomsOccupied;
 
