@@ -39,8 +39,6 @@ public class _10_LargestAndSmallest
         // get the values and store the least in min and largest in max
         while (num != SENTINEL_VALUE)
         {
-            System.out.print("Enter a value or -99 to quit: ");
-            num = keyboard.nextInt();
 
             if (num < min)
             {
@@ -50,6 +48,8 @@ public class _10_LargestAndSmallest
             {
                 max = num;
             }
+            System.out.print("Enter a value or -99 to quit: ");
+            num = keyboard.nextInt();
 
         }
         System.out.println("\nSmallest number is: " + min);
