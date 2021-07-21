@@ -7,24 +7,30 @@ import java.util.Scanner;
 
 public class SortedNames
 {
-    public static void main(String [] args)
+    public static void main(String[] args)
     {
+        // create a Scanner object to read input from the keyboard
         Scanner keyboard = new Scanner(System.in);
+
+        // declare variables that will hold the names
+        String var_name1, var_name2, var_name3;     
 
         // prompt the user to enter three names 
         System.out.print("Enter 1st name: ");
-        String var_name1 = keyboard.nextLine();
+        var_name1 = keyboard.nextLine();
         
         System.out.print("Enter 2nd name: ");
-        String var_name2 = keyboard.nextLine();
+        var_name2 = keyboard.nextLine();
 
         System.out.print("Enter 3rd name: ");
-        String var_name3 = keyboard.nextLine();
+        var_name3 = keyboard.nextLine();
         
         System.out.println(); // display a blank line
 
+        // display the names in alphabetical order
+        // lexicographical comparison technique is used to achieve this
         if (var_name1.compareToIgnoreCase(var_name2) < 0 && 
-                var_name1.compareToIgnoreCase(var_name3) < 0)
+            var_name1.compareToIgnoreCase(var_name3) < 0)
         {
             System.out.println(var_name1);
             if (var_name2.compareToIgnoreCase(var_name3) < 0)
@@ -55,8 +61,7 @@ public class SortedNames
 
             }
         }
-        else if (var_name3.compareToIgnoreCase(var_name1) < 0 && 
-                var_name3.compareToIgnoreCase(var_name2) < 0)
+        else 
         {
             System.out.println(var_name3);
             if (var_name1.compareToIgnoreCase(var_name2) < 0)
@@ -74,5 +79,4 @@ public class SortedNames
 
     }
 }
-
 
