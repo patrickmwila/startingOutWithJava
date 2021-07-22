@@ -27,5 +27,6 @@ public class Sum
 
         // display sum of numbers
         System.out.printf("\nSum of numbers entered is %d",var_sum_total);
+        System.out.println();
     }
 }
