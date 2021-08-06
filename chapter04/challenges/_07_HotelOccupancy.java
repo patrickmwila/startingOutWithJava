@@ -25,7 +25,7 @@ public class _07_HotelOccupancy
         double occupancyRate;
 
         // prompt for userInput
-        System.out.print("Enter the number of floors in the hotel: ");
+        System.out.print("\nEnter the number of floors in the hotel: ");
         hotelFloors = keyboard.nextInt();
 
         while (hotelFloors < 1)
@@ -38,22 +38,30 @@ public class _07_HotelOccupancy
         // a loop which iterates once for each floor
         for (floor = 1; floor <= hotelFloors; floor++)
         {
-            System.out.printf("(%d floor) Enter the number of rooms on " +
-                       "this floor: ",floor);
+            System.out.printf("\n(%d floor) Enter the number of rooms on " +
+                       "this floor: ", floor);
             rooms = keyboard.nextInt();
 
              while (rooms < 10)
              {
-                 System.out.print("\nNumber of rooms must be atleast 10 " +
-                            "\n(Ground floor) Enter the number of rooms " +
-                            "on this floor: ");
+                 System.out.printf("\nNumber of rooms must be atleast 10 " +
+                            "\n(%d floor) Enter the number of rooms " +
+                            "on this floor: ", floor);
                  rooms = keyboard.nextInt();
              }
-            totalRooms += rooms;
+             totalRooms += rooms;
 
-            System.out.print("How many rooms are occupied? ");
-            occupiedRooms = keyboard.nextInt();
-            totalRoomsOccupied += occupiedRooms;
+             System.out.print("How many rooms are occupied? ");
+             occupiedRooms = keyboard.nextInt();
+
+	     while(occupiedRooms > rooms)
+	     {
+		 System.out.print("\nOccupied rooms cannot exceed number of current rooms!" +
+				  "\nEnter valid number of rooms occupied: ");
+		 occupiedRooms = keyboard.nextInt();
+
+	     }
+             totalRoomsOccupied += occupiedRooms;
             
         }
         // calculate number of rooms which are vacant
