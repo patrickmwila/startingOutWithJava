@@ -14,12 +14,15 @@ public class _23_WebPageGenerator
         // create a Scanner object for getting input from the keyboard
         Scanner keyboard = new Scanner(System.in);
 
+        // declare variables to be used...
+        String userName, userBio;
+
         // prompt for user input
         System.out.print("Enter your name: ");
-        String userName = keyboard.nextLine();
+        userName = keyboard.nextLine();
 
         System.out.print("Describe yourself: ");
-        String userBio = keyboard.nextLine();
+        userBio = keyboard.nextLine();
 
         // create a PrintWriter object for writing to file
         PrintWriter outputFile = new PrintWriter("Index.html");
