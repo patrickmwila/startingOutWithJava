@@ -29,13 +29,17 @@ public class _23_WebPageGenerator
 
         // generate an html file containing user data
         outputFile.println("<html>\n" + 
-                           "<head> </head>\n" + 
-                           "<body>\n" +
-                           "<center>" + userName + "</center>\n" + 
-                           "<hr>\n" + userBio + "\n</hr>\n" + 
-                           "</body>\n" + 
-                           "</html>");
+                           "\t<head> </head>\n" + 
+                           "\t<body>\n" +
 
+                           "\t\t<center>\n" + userName + 
+                           "\n\t\t</center>\n" + 
+
+                           "\t\t<hr>\n" + userBio + 
+                           "\n\t\t</hr>\n" + 
+
+                           "\t</body>\n" + 
+                           "</html>");
         keyboard.close();
         outputFile.close();
     }

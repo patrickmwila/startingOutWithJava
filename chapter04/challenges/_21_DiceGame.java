@@ -4,6 +4,7 @@
  * Description: A program that simulates a dice game
  */
 import java.util.Random;
+
 public class _21_DiceGame
 {
     public static void main(String[] args)

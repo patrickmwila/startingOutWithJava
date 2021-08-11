@@ -56,7 +56,7 @@ public class _19_EspGame
                     System.out.println("Yellow");
                     break;
             }
-            randVar = rand.nextInt(5);
+            randVar = rand.nextInt(4);
         }
         
         System.out.printf("\nNumber of guesses correct = %d\n", guesses);
