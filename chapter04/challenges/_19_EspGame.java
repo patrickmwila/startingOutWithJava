@@ -14,9 +14,9 @@ public class _19_EspGame
         Scanner keyboard = new Scanner(System.in);  // creates a Scanner object
         Random rand = new Random();                 // creates a random object
 
-        int randVar = rand.nextInt(5);              // generate a random integer in the range 1 via 4
+        int randVar = rand.nextInt(5);         // generate values from 1 via 4 
         String userInput = null;
-        int guesses = 0;                             // accumulator to keep track of user's correct guesses
+        int guesses = 0;                            // accumulator to keep track of user's correct guesses
 
         System.out.println("\nA program that tests your extrasensory perception.");
 
