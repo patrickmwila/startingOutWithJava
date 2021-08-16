@@ -61,10 +61,10 @@ import java.util.Scanner;
         // display the results
         System.out.printf("Number of months in %d year(s) = %d\n", years,
                           total_months);
-                          
+                         
         System.out.printf("Total inches of rainfall in %d year(s) = %.2f inches\n",
                          years, inches_total);
-                         
+
         System.out.printf("Total average rainfall in %d year(s) = %.2f inches\n", 
                          years, average_rainfall);
     }
