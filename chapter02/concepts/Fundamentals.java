@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
  * @author patrick
  * Practicing various java syntax and programming concepts
  */
-public class Challenge00 
+public class Fundamentals 
 {
    public static void main(String[] args) 
    {
