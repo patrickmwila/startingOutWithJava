@@ -16,11 +16,10 @@ public class _04_PaintJobEstimator
         System.out.print("\nEnter the number of rooms to be painted: ");
         short numOfRooms = keyboard.nextShort();
 
-
-        // implement a for loop to get the square feet of wall space
         int squareFeet = 0;
         double costOfPaint, gallons, hours, cost, charges, totalCharges;
 
+        // implement a for loop to get the square feet of wall space
         for (int room = 1; room <= numOfRooms; room++)
         {
             System.out.printf(
@@ -76,6 +75,7 @@ public class _04_PaintJobEstimator
 
     /**
      * costOfPaint() calculates the cost of paint
+     * @param squareFeet stores the square feet of wall space value
      * @param costOfPaint stores the cost of paint per gallon
      *
      * @return the cost of paint
@@ -96,11 +96,14 @@ public class _04_PaintJobEstimator
 
     /**
      * totalCost() calculates the total cost of the paint job
+     * @param sqaureFeet stores the square feet of wall space value
+     * @param costOfPaint stores the cost of paint
+     * @param squareFeet2 stores the sqaure feet of wall space value
      *
      * @return the total cost of the paint job
      */
-    public static double totalCost(int squareFeet1, double costOfPaint, int squareFeet)
+    public static double totalCost(int squareFeet, double costOfPaint, int squareFeet2)
     {
-        return costOfPaint(squareFeet1, costOfPaint) + laborCharges(squareFeet);
+        return costOfPaint(squareFeet, costOfPaint) + laborCharges(squareFeet2);
     }
 }
