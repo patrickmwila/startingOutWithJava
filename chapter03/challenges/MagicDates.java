@@ -33,18 +33,5 @@ public class MagicDates
         {
                 System.out.println("The date is not magic!");
         }
-
-       /* switch(var_magic_date)
-        {
-            case var_year:
-                System.out.printf("The date is magic!\n");
-            break;
-
-            default:
-                System.out.println("The date is not magic!");
-            break;
-        }
-        */
-
     }
 }
