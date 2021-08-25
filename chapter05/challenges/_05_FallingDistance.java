@@ -3,30 +3,38 @@
  * Date       : 24-08-2021
  * Description: This program calculates the distance of a falling object
  */
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class _05_FallingDistance
 {
     public static void main(String[] args)
     {
+        // create a Scanner object for keybaord input
+        Scanner keyboard = new Scanner(System.in);
+        
         // variable declaration
         double time, distance;
         String str, output;
 
-        // prompt for user input
-        str = JOptionPane.showInputDialog(
-                 "Enter the time in seconds it took for the object to fall "
-              );
-        time = Double.parseDouble(str);
+        // run the program 10 times for different values of time
+        System.out.println("The program will run for 10 times\n");
+        for (int count = 1; count <= 10; count++)
+        {
+            // prompt for user input
+            System.out.print(
+                "Enter the time in seconds it took for the object to fall "
+            );
+            time = keyboard.nextDouble();
 
-        // invoke the fallingDistance() 
-        distance = fallingDistance(time);
+            // invoke the fallingDistance() 
+            distance = fallingDistance(time);
 
-        // display the results
-        output = String.format(
-                    "The distance covered by the object is %.2fm", distance
-                 );
-        JOptionPane.showMessageDialog(null, output);
+            // display the results
+            output = String.format(
+                        "The distance covered by the object is %.1fm", distance
+                     );
+            System.out.println(output + "\n\n");
+        }
     }
 
     /**
