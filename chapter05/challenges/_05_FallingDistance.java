@@ -38,7 +38,7 @@ public class _05_FallingDistance
     }
 
     /**
-     * fallingDistance() calculates the distance of a given object
+     * fallingDistance() calculates the distance of a given instance
      * @param seconds stores an object's falling time in seconds
      *
      * @return the distance the of an object covers when it falls
