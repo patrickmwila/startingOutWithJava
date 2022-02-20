@@ -7,15 +7,15 @@ public class EmployeeTester {
         Employee employee3 = new Employee("Joy Rogers", "Manufacturing", "Engineer", 81774);
 
 
-        // invoke the displayInfo...
+        // invoke the displayIn...
         displayInfo(employee1);
         displayInfo(employee2);
         displayInfo(employee3);
     }
 
     /**
-     * The displayInfo method display information about an employee.
-     * @param employee The employee object create from Employee class.
+     * The displayInfo method displays information about an employee.
+     * @param employee The employee object created from Employee class.
      */
     public static void displayInfo(Employee employee){
         System.out.printf(
